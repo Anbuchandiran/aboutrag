@@ -1,0 +1,35 @@
+Patient Details
+Patient ID: PAT005
+Patient Name: Rahul Sharma
+Age: 60
+Gender: Male
+Phone: 9123456789
+Chronic Conditions: hypertension, heart disease
+Allergies: aspirin
+Doctor ID: DOC005
+Doctor Name: Dr. Priya Nair
+Department: Cardiology
+Generated At: 2026-03-07 17:59:23
+
+----------------------------------------
+
+Overall_Status: INSUFFICIENT
+Key_Reason: Drug names provided are not recognized as real medications, preventing any assessment of interactions or safety.
+Interactions:
+- plezanrei + pkka: INSUFFICIENT (Unrecognized drug names)
+- plezanrei + dijozxn: INSUFFICIENT (Unrecognized drug names)
+- plezanrei + 71i: INSUFFICIENT (Unrecognized drug names)
+- plezanrei + yen: INSUFFICIENT (Unrecognized drug names)
+- pkka + dijozxn: INSUFFICIENT (Unrecognized drug names)
+- pkka + 71i: INSUFFICIENT (Unrecognized drug names)
+- pkka + yen: INSUFFICIENT (Unrecognized drug names)
+- dijozxn + 71i: INSUFFICIENT (Unrecognized drug names)
+- dijozxn + yen: INSUFFICIENT (Unrecognized drug names)
+- 71i + yen: INSUFFICIENT (Unrecognized drug names)
+Per_Drug_Notes:
+- plezanrei: INSUFFICIENT (Drug name not recognized)
+- pkka: INSUFFICIENT (Drug name not recognized)
+- dijozxn: INSUFFICIENT (Drug name not recognized)
+- 71i: INSUFFICIENT (Drug name not recognized)
+- yen: INSUFFICIENT (Drug name not recognized)
+Action: Confirm correct drug names for a proper clinical assessment.

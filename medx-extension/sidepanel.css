@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  padding: 16px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.topbar p {
+  margin: 4px 0 16px;
+  color: #94a3b8;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+input, textarea, button {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+}
+
+input, textarea {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+#extractBtn {
+  background: #334155;
+  color: white;
+}
+
+.status {
+  margin-top: 14px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.result-card {
+  margin-top: 16px;
+  background: #111827;
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid #1f2937;
+}
+
+.hidden {
+  display: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.badge.safe {
+  background: #14532d;
+}
+
+.badge.caution {
+  background: #854d0e;
+}
+
+.badge.notsafe {
+  background: #7f1d1d;
+}
+
+.badge.insufficient {
+  background: #334155;
+}
+
+.result-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: #e2e8f0;
+}

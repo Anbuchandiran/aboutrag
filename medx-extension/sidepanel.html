@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedX Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div>
+        <h1>MedX AI</h1>
+        <p>Prescription OCR + Validation</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <label>Patient ID</label>
+      <input id="patientId" placeholder="PAT001" />
+
+      <label>Doctor ID</label>
+      <input id="doctorId" placeholder="DOC001" />
+
+      <label>Upload Prescription Image</label>
+      <input id="imageInput" type="file" accept="image/*" />
+      <button id="extractBtn">Extract Medicine Names</button>
+
+      <label>Extracted / Editable Medicines</label>
+      <textarea id="query" rows="8" placeholder="Medicines will appear here..."></textarea>
+
+      <button id="validateBtn" class="primary">Validate Prescription</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="resultCard" class="result-card hidden">
+      <div id="resultBadge" class="badge">RESULT</div>
+      <div id="resultText" class="result-text"></div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

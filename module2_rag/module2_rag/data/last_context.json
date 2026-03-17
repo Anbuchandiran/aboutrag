@@ -1,0 +1,25 @@
+{
+  "patient_id": "PAT005",
+  "doctor_id": "DOC005",
+  "patient": {
+    "name": "Rahul Sharma",
+    "age": 60,
+    "gender": "Male",
+    "phone": "9123456789",
+    "chronic_conditions": [
+      "hypertension",
+      "heart disease"
+    ],
+    "allergies": [
+      "aspirin"
+    ]
+  },
+  "doctor": {
+    "name": "Dr. Priya Nair",
+    "department": "Cardiology",
+    "phone": "9000000005",
+    "email": "saumihari2208@gmail.com"
+  },
+  "generated_at": "2026-03-07 17:59:23",
+  "normalized_key": "71i|dijozxn|pkka|plezanrei|yen"
+}

@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+pandas
+numpy
+opencv-python
+easyocr
+rapidfuzz
+pymongo
+chromadb
+sentence-transformers
+python-multipart
+requests
+torch
+faster-whisper

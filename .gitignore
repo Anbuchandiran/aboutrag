@@ -1,0 +1,10 @@
+.venv/
+.venv310/
+node_modules/
+.env
+.models/
+module2_rag/.models/
+db/
+module2_rag/db/
+module2_rag/data/
+*.log

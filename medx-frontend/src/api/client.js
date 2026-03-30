@@ -4,7 +4,7 @@ export function getApiBase() {
     return configured.replace(/\/+$/, "");
   }
 
-  return "http://127.0.0.1:8000";
+  return "/api";
 }
 
 export const API_BASE = getApiBase();

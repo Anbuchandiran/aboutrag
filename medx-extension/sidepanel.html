@@ -8,36 +8,96 @@
 </head>
 <body>
   <div class="app">
-    <div class="topbar">
-      <div>
-        <h1>MedX AI</h1>
-        <p>Prescription OCR + Validation</p>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero">
+      <div class="hero-mark">
+        <span>M</span>
       </div>
-    </div>
+      <div class="hero-copy">
+        <div class="eyebrow">MedX Assistant</div>
+        <h1>Validate prescriptions in one focused panel</h1>
+        <p>Upload a prescription, refine the extracted medicine list, and run a safety check without leaving the browser.</p>
+        <div class="hero-pills">
+          <span class="hero-pill">Clinical memory</span>
+          <span class="hero-pill">Medication safety</span>
+        </div>
+      </div>
+    </header>
 
-    <div class="card">
-      <label>Patient ID</label>
-      <input id="patientId" placeholder="PAT001" />
+    <section class="glass-card overview-card">
+      <div class="overview-row">
+        <div class="overview-item">
+          <span>Mode</span>
+          <strong>OCR + Validation</strong>
+        </div>
+        <div class="overview-item">
+          <span>Experience</span>
+          <strong>Shared MedX UI</strong>
+        </div>
+      </div>
+      <div class="chip-row">
+        <span class="chip">Fast extraction</span>
+        <span class="chip">Editable query</span>
+        <span class="chip">Instant verdict</span>
+      </div>
+    </section>
 
-      <label>Doctor ID</label>
-      <input id="doctorId" placeholder="DOC001" />
+    <section class="glass-card form-card">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">Workspace</div>
+          <h2>Case details</h2>
+        </div>
+      </div>
 
-      <label>Upload Prescription Image</label>
-      <input id="imageInput" type="file" accept="image/*" />
-      <button id="extractBtn">Extract Medicine Names</button>
+      <div class="form-grid">
+        <div class="field">
+          <label for="patientId">Patient ID</label>
+          <input id="patientId" placeholder="PAT001" />
+        </div>
 
-      <label>Extracted / Editable Medicines</label>
-      <textarea id="query" rows="8" placeholder="Medicines will appear here..."></textarea>
+        <div class="field">
+          <label for="doctorId">Doctor ID</label>
+          <input id="doctorId" placeholder="DOC001" />
+        </div>
+      </div>
 
-      <button id="validateBtn" class="primary">Validate Prescription</button>
-    </div>
+      <div class="field">
+        <label for="imageInput">Prescription image</label>
+        <div class="upload-shell">
+          <input id="imageInput" type="file" accept="image/*" />
+          <p>PNG, JPG, or prescription screenshot</p>
+        </div>
+      </div>
 
-    <div id="status" class="status"></div>
+      <button id="extractBtn" class="btn btn-secondary">Extract medicine names</button>
 
-    <div id="resultCard" class="result-card hidden">
-      <div id="resultBadge" class="badge">RESULT</div>
+      <div class="field">
+        <div class="label-row">
+          <label for="query">Editable medicines</label>
+          <span id="queryMeta">0 chars</span>
+        </div>
+        <textarea id="query" rows="8" placeholder="Medicines will appear here after OCR, or type them manually..."></textarea>
+      </div>
+
+      <button id="validateBtn" class="btn btn-primary">Validate prescription</button>
+    </section>
+
+    <div id="status" class="status status-idle">Waiting for input.</div>
+
+    <section id="resultCard" class="glass-card result-card hidden">
+      <div class="result-head">
+        <div>
+          <div class="section-kicker">Safety Result</div>
+          <h2>Clinical verdict</h2>
+        </div>
+        <div id="resultBadge" class="badge">RESULT</div>
+      </div>
+      <div id="resultSummary" class="result-summary hidden"></div>
       <div id="resultText" class="result-text"></div>
-    </div>
+    </section>
   </div>
 
   <script src="sidepanel.js"></script>

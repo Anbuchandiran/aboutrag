@@ -1,0 +1,47 @@
+{
+  "ocr": [
+    {
+      "id": "ocr_case_1",
+      "file": "module2_rag/src/Image_ocr.jpg",
+      "expected_text": "warfarin aspirin"
+    }
+  ],
+  "voice": [
+    {
+      "id": "voice_case_1",
+      "file": "path/to/audio_sample.webm",
+      "expected_text": "warfarin aspirin",
+      "expected_status": "NOT SAFE"
+    }
+  ],
+  "manual": [
+    {
+      "id": "manual_case_1",
+      "patient_id": "PAT005",
+      "doctor_id": "DOC005",
+      "query": "warfarin + aspirin",
+      "expected_status": "NOT SAFE",
+      "required_keywords": ["interaction"]
+    }
+  ],
+  "validation": [
+    {
+      "id": "validation_case_1",
+      "patient_id": "PAT005",
+      "doctor_id": "DOC005",
+      "query": "warfarin + aspirin",
+      "expected_status": "NOT SAFE",
+      "required_keywords": ["action", "interaction"],
+      "forbidden_keywords": ["safe to combine"]
+    }
+  ],
+  "history": [
+    {
+      "id": "history_case_1",
+      "patient_id": "PAT005",
+      "contains_text": "warfarin",
+      "counterpart_id": "DOC005",
+      "limit": 20
+    }
+  ]
+}
